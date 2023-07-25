@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 18px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #bar {
+    margin: 0 auto;
+    width:575px;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+    background-color: white;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+  }
+
+  #bar:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  }
+
+  #bar:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+
+  #search-input {
+  height:45px;
+  border:none;
+  width:500px;
+  font-size:16px;
+  outline: none;
+  background-color: transparent;
+  border-radius:30px;
+  margin-left: 15px;
+  }
+
+
+
+  header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url('../img/library-img.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+  .fa-sharp {
+    font-size: 20px;
+    height:20px;
+    position:relative;
+    top: 5px;
+    left:10px;
+    color: black;
+  }
+
+  #search-button {
+    background-color: transparent;
+    border: none;
+  }
+
+  #search-button:hover {
+    cursor: pointer;
+  }
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+
+
+  #books {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+#result {
+  color: black;
+  opacity: 1;
+  margin-bottom: 50px;
+}
