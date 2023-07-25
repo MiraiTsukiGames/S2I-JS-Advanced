@@ -10,8 +10,11 @@
 
 body {
   font-size: 18px;
+  background-color: rgb(253, 252, 244);
 }
-
+.container {
+  max-width: auto;
+}
 h1 {
     color: rgb(255, 255, 255);
     font-size: 6rem;
@@ -53,7 +56,8 @@ h1 {
 
 
   header {
-    min-height: 100vh;
+    height:  100vh;
+    width: 100%;
     background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url('../img/library-img.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -78,6 +82,7 @@ h1 {
 
   #search-button:hover {
     cursor: pointer;
+    color: blueviolet;
   }
 
   h2 {
@@ -96,9 +101,35 @@ h1 {
     align-items: center;
   }
 
-
-#result {
+h3 {
+  font-size: 2rem;
+}
+#book-list {
   color: black;
   opacity: 1;
   margin-bottom: 50px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  text-align: center;
 }
+
+.description {
+   text-align: center;
+   line-height: 1.8;
+}
+
+.container-description {
+        max-width: 900px;
+}
+
+.bookCard {
+  text-align: center;
+  padding: 3rem;
+  border: 1px solid black;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+}
+
