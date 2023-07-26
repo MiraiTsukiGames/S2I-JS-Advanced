@@ -9,7 +9,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
   entry: {
       index: './src/js/index.js',
-      book: './src/js/book.js',
+      book: './src/js/bookElements.js',
       api: './src/js/api.js'
   },
   output: {
