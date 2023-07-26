@@ -1,7 +1,86 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
  
+ @media only screen and (min-width: 1024)  {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
 
-@media only screen and (max-width: 912px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  #bar {
+    max-width: 100%;
+    top: 60%;
+    left: -60px;
+  }
+
+  #search-input {
+    height: 35px;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  .structural {
+    position:absolute; 
+    left:80px; 
+    top: 60%;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+
+ #book-list h2 {
+    font-size: 1.5rem;
+  }
+
+
+  #book-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .bookCard {
+    padding: 2em;
+    max-width: 80%;
+  }
+
+  .container-description {
+    max-width: 100%;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 1.8;
+ }
+
+ .read-button {
+  background-color: darkblue;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 14px 20px;
+  padding-top: 10px;
+}
+
+.read-button:hover {
+  background-color: lightskyblue;
+  color: darkblue;
+  cursor: pointer;
+}
+}
+ 
+ @media only screen and (max-width: 912px) {
 
   * {
     box-sizing: border-box;
@@ -37,13 +116,19 @@
     height: 50vh;
   }
 
-  h2 {
+  .structural {
+    position:absolute; 
+    left:80px; 
+    top: -160%;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
+    opacity: 0.5;
   }
 
-  h3 {
+ #book-list h2 {
     font-size: 1.5rem;
   }
+
 
   #book-list {
     display: flex;
@@ -66,6 +151,22 @@
     text-align: center;
     line-height: 1.8;
  }
+
+ .read-button {
+  background-color: darkblue;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 14px 20px;
+  padding-top: 10px;
+}
+
+.read-button:hover {
+  background-color: lightskyblue;
+  color: darkblue;
+  cursor: pointer;
+}
 }
 
 @media only screen and (max-width: 576px) {
@@ -104,14 +205,18 @@
     height: 50vh;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
+  #book-list h2 {
     font-size: 1rem;
   }
 
+  .structural {
+    position:absolute; 
+    left:80px; 
+    top: -120%;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    opacity: 0.5;
+  }
   #book-list {
     display: flex;
     flex-direction: column;
@@ -142,5 +247,21 @@
   top: 0;
   left: 10px;
   color: black;
+}
+
+.read-button {
+  background-color: darkblue;
+  color: white;
+  font-size: 8px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 5px 10px;
+  padding-top: 5px;
+}
+
+.read-button:hover {
+  background-color: lightskyblue;
+  color: darkblue;
+  cursor: pointer;
 }
 }

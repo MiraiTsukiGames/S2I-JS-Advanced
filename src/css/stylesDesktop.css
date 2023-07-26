@@ -53,8 +53,21 @@ h1 {
   margin-left: 15px;
   }
 
+  .read-button {
+    background-color: darkblue;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 14px 20px;
+    padding-top: 10px;
+  }
 
-
+  .read-button:hover {
+    background-color: lightskyblue;
+    color: darkblue;
+    cursor: pointer;
+  }
   header {
     height:  100vh;
     width: 100%;
@@ -85,8 +98,11 @@ h1 {
     color: blueviolet;
   }
 
-  h2 {
-    color: white;
+  .structural {
+    position:absolute; 
+    left:80px; 
+    top: -200%;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     opacity: 0.5;
   }
@@ -101,7 +117,7 @@ h1 {
     align-items: center;
   }
 
-h3 {
+#book-list h2 {
   font-size: 2rem;
 }
 #book-list {

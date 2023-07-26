@@ -16,28 +16,40 @@ searchButton.addEventListener('click', async () => {
         const authors = book.authors[0].name;
         const key = book.key;
         const bookItem = document.createElement('div');
+        const readButton = document.createElement('button');
         bookItem.classList.add('bookCard');
-        bookItem.innerHTML = `<strong><h3>${title}</h3></strong> 
+        readButton.textContent = 'read more';
+        readButton.classList.add('read-button');
+        bookItem.innerHTML = `<strong><h2>${title}</h2></strong> 
         <p>Autore: ${authors}</p>`;
-        bookItem.addEventListener('click', async () => {
+        readButton.addEventListener('click', async () => {
             const bookResponse = await fetch(`https://openlibrary.org${key}.json`);
             const bookData = await bookResponse.json();
+            if(typeof bookData.description === 'string') {
             const description = bookData.description;
             const descriptionDiv = document.createElement('div');
             const descriptionContainer = document.createElement('div');
             descriptionContainer.classList.add('container-description');
             descriptionDiv.classList.add('description');
               descriptionDiv.innerHTML = `
-              <p>Descrizione: <br>${description}</p>`
+              <p>Description: <br>${description}</p>`
               bookItem.append(descriptionContainer);
               descriptionContainer.append(descriptionDiv);
-            
-            console.log(bookData.description);
+            } else {
+              const descriptionDiv = document.createElement('div');
+              const descriptionContainer = document.createElement('div');
+              descriptionContainer.classList.add('container-description');
+              descriptionDiv.classList.add('description');
+                descriptionDiv.innerHTML = `<a href="https://openlibrary.org${key}" target="_blank">View more</a>`;
+                bookItem.append(descriptionContainer);
+                descriptionContainer.append(descriptionDiv);
+            }
         });
         bookList.appendChild(bookItem);
+        bookItem.appendChild(readButton);
       });
   } else {
-    bookList.innerHTML = '<h3>Please write a category in english.</h3>';
+    bookList.innerHTML = '<h2>Please write a category in english.</h2>';
     
   }
 });
