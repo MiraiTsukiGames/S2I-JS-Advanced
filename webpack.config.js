@@ -10,8 +10,7 @@ module.exports = {
   entry: {
       index: './src/js/index.js',
       book: './src/js/book.js',
-      api: './src/js/api.js',
-      bookDescription: './src/js/bookDescription.js'
+      api: './src/js/api.js'
   },
   output: {
       path: path.resolve(__dirname, 'dist'),
@@ -51,16 +50,7 @@ module.exports = {
                   }
               },
           },
-          {
-            test: /favicon\.ico$/,
-            use: {
-                loader: 'file-loader',
-                options: {
-                    name: 'favicon.ico',
-                    outputPath: './img'
-                }
-            }
-          }
+          
         ]
     },
   plugins: [

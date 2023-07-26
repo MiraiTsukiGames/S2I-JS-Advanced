@@ -1,146 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ 
 
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  line-height: 1.6;
-  font-family: 'Poppins', sans-serif;
-}
+@media only screen and (max-width: 912px) {
 
-#bar:hover {
-    box-shadow: 1px 1px 8px 1px #dcdcdc;
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
   }
 
-  #bar:focus-within {
-    box-shadow: 1px 1px 8px 1px #dcdcdc;
-    outline:none;
-  }
-
- .description {
-   text-align: center;
-   line-height: 1.8;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@media (max-width: 900px){ 
   body {
-    font-size: 5px;
-    background-color: rgb(253, 252, 244);
+    font-size: 14px;
     overflow-x: hidden;
   }
+
+
   h1 {
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-weight: bold;
-  }
-
-  header {
-      height:  30vh;
-      width: 30%;
-      background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url('../img/library-img.jpg') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .container {
-    max-width: 800px;
-  }
-
-  #book-list {
-    color: black;
-    opacity: 1;
-    margin-bottom: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
+    font-size: 5rem;
   }
 
   #bar {
-    margin: 0 auto;
-    width:160px;
-    border-radius:30px;
-    border:1px solid #dcdcdc;
-    background-color: rgba(255, 255, 255, 0.404);
-      position: absolute;
-      top: 20%;
-      left: 5%;
-
+    max-width: 100%;
+    top: 32%;
+    left: 15%;
   }
 
   #search-input {
-    height:30px;
-    border:none;
-    width:120px;
-    font-size:10px;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius:30px;
-    margin-left: 10px;
-    }
-
-    
-  .fa-sharp {
-    font-size: 10px;
-    height:20px;
-    position:relative;
-    top: 0;
-    left: 0px;
-    color: black;
-  }
-  #search-button {
-    background-color: transparent;
-    border: none;
+    height: 35px;
+    max-width: 100%;
+    font-size: 14px;
   }
 
-  #search-button:hover {
-    cursor: pointer;
-    color: blueviolet;
+  header {
+    height: 50vh;
   }
 
   h2 {
-    color: white;
-    font-size: 1rem;
-    opacity: 0.5;
+    font-size: 2rem;
   }
 
-  #books {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #book-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 150px;
-    margin-left: 3%;
-    
+   
+  }
+
+  .bookCard {
+    padding: 2em;
+    max-width: 80%;
+  }
+
+  .container-description {
+    max-width: 100%;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 1.8;
+ }
+}
+
+@media only screen and (max-width: 576px) {
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    font-size: 8px;
+    overflow-x: hidden;
+  }
+
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #bar {
+    max-width: 80%;
+    top: 35%;
+    left: 10%;
+  }
+
+  #search-input {
+    height: 35px;
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
- .container-description {
-    max-width: 200px;
-    font-size: 5px;
+  #book-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .bookCard {
+    padding: 1em;
+    max-width: 80%;
+  }
+
+  .container-description {
+    max-width: 100%;
+  }
+
+  .description {
+    text-align: center;
+    line-height: 1.8;
+ }
+
+ 
+ .fa-sharp {
+  font-size: 15px;
+  height: 15px;
+  position:relative;
+  top: 0;
+  left: 10px;
+  color: black;
 }
-
-.bookCard {
-text-align: center;
-padding: 5px;
-border: 1px solid black;
-background-color: rgb(233, 233, 233);
-border-radius: 5px;
-}
-
-
 }
