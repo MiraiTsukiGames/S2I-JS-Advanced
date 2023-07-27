@@ -41,7 +41,7 @@ Check out for index.html in the /dist folder.
 
 ## 📱:  Try it!
 Elsewhere, you can simply try it here:
-[Best Cities To Live](https://bookresearch.netlify.app/)
+[Book Research](https://bookresearch.netlify.app/)
 
 ## :e-mail: Contact Me
 You can find my Linkedin profile here: https://www.linkedin.com/in/samanta-mancini/
