@@ -44,4 +44,4 @@ Elsewhere, you can simply try it here:
 [Book Research](https://bookresearch.netlify.app/)
 
 ## :e-mail: Contact Me
-You can find my Linkedin profile here: [https://www.linkedin.com/in/samanta-mancini/](https://www.linkedin.com/in/samantamancini/)https://www.linkedin.com/in/samantamancini/
+You can find my Linkedin profile here: (https://www.linkedin.com/in/samantamancini/)
