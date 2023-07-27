@@ -11,8 +11,8 @@ const getData = async function(category) {
   };
 
   //Function get the book description
-const getBooks = async (key, bookItem) =>  {
-    const bookResponse = await fetch(`https://openlibrary.org${key}.json`);
+const getBooks = async (bookKey, bookItem) =>  {
+    const bookResponse = await fetch(`https://openlibrary.org${bookKey}.json`);
           if (!bookResponse.ok) {
             throw new Error('No results found');
           }
@@ -28,7 +28,7 @@ const getBooks = async (key, bookItem) =>  {
             descriptionDiv.innerHTML = `
             <p>Description: <br>${description}</p>`
           } else {
-              descriptionDiv.innerHTML = `<a href="https://openlibrary.org${key}" target="_blank">View more</a>`;
+              descriptionDiv.innerHTML = `<a href="https://openlibrary.org${bookKey}" target="_blank">View more</a>`;
           }
         };
 

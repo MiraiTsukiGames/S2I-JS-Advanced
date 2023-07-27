@@ -16,7 +16,7 @@ const createBookCards = function(books) {
     books.forEach((book) => {
      const title = book.title
      const authors = book.authors[0].name;
-     const key = book.key;
+     const bookKey = book.key;
     const bookItem = createCard(title, authors);
     const readButton = createReadButton();
 
@@ -25,7 +25,7 @@ const createBookCards = function(books) {
 
     //Read button event listener 
     readButton.addEventListener('click', async function() {
-      getBooks(key, bookItem);
+      getBooks(bookKey, bookItem);
       readButton.remove();
       });
     });  

@@ -1,5 +1,5 @@
 
-//Function create bookCards 
+//Function create bookCards title and authors html elements
 const createCard = function(title, authors) {
    const bookDiv = document.createElement('div');
    const titleElement = document.createElement('h2');
@@ -14,7 +14,7 @@ const createCard = function(title, authors) {
     return bookDiv;
  }
  
- //Function create Read Button
+ //Function create Read Button html elements
  const createReadButton = function() {
  const readMore = document.createElement('button');
  
@@ -24,14 +24,14 @@ const createCard = function(title, authors) {
    return readMore;
  }
  
- //Function create Description container
+ //Function create Description container html elements
  const createDescriptionContainer = function() {
  const descriptionC = document.createElement('div');
  descriptionC.classList.add('container-description');
    return descriptionC;
  }
  
- //Function create Description Div
+ //Function create Description Div html elements
  const createDescriptionDiv = function() {
  const descriptionD = document.createElement('div');
  descriptionD.classList.add('description');
