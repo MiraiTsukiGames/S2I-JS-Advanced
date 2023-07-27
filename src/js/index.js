@@ -39,8 +39,8 @@ const handleSearch = async function() {
     setTimeout(() => location.reload(), 3000);
     return;
   }
+     bookList.innerHTML ='';
     books = await getData(category);  
-    bookList.innerHTML ='';
     createBookCards(books);
   
 };
