@@ -20,7 +20,7 @@ If you want to read the description, you can click the button and then show the 
 * [Webpack 5](https://webpack.js.org/)
 
 ## 📚: External Services
-* [Openlibrary API](https://openlibrary.org/developers.openlibrary.org/api/)
+* [Openlibrary API]([https://openlibrary.org/developers/api])
 
 ## :floppy_disk: Installation
 First of all, you need Node.js installed.
