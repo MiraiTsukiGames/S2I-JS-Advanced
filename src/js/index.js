@@ -34,6 +34,7 @@ const createBookCards = function(books) {
 //HandleSearch function
 const handleSearch = async function() {
   const category = categoryInput.value.trim();
+  bookList.scrollIntoView({ behavior: 'smooth'});
   if (category === '') {
     bookList.innerHTML = `<h2>Please write a category in English</h2>`;
     setTimeout(() => location.reload(), 3000);
