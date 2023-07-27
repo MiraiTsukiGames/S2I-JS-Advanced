@@ -39,7 +39,7 @@ const handleSearch = async function() {
     setTimeout(() => location.reload(), 3000);
     return;
   }
-     bookList.innerHTML ='';
+    bookList.innerHTML ='';
     books = await getData(category);  
     createBookCards(books);
   
