@@ -1,16 +1,21 @@
 {
   "name": "bookresearch",
   "version": "1.0.0",
-  "description": "",
+  "description": "website builted for searching books",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack serve --mode=development",
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development"
   },
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/miraitsukigames/S2I-JS-Advanced.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/MiraiTsukiGames/S2I-JS-Advanced#readme",
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
