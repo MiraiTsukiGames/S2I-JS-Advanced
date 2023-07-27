@@ -3,12 +3,12 @@ import '../css/stylesMobile.css';
 import { createCard, createReadButton } from './bookElements';
 import { getBooks, getData } from './api';
 
-
 //variables
 const categoryInput = document.getElementById('search-input');
 const bookList = document.getElementById('book-list');
 const searchButton = document.getElementById('search-button');
-
+let category;
+let books = [];
 
 //Function create BookCards
 const createBookCards = function(books) {
@@ -32,18 +32,22 @@ const createBookCards = function(books) {
 };
 
 //HandleSearch function
-const handleSearch = async function() {
-  let category = categoryInput.value.trim().toLowerCase().replace(/[\W_]/g, '');
+const handleSearch = async function(category) {
+  try {
+  category = categoryInput.value.trim().toLowerCase().replace(/[\W_]/g, '');
   bookList.scrollIntoView({ behavior: 'smooth'});
   if (category === '') {
     bookList.innerHTML = '<h2>Please write a category in english</h2>';
     setTimeout(() => location.reload(), 3000);
     return;
-  } else {
-    bookList.innerHTML ='';
-    const books = await getData(category);
-    createBookCards(books);
   }
+    bookList.innerHTML ='';
+    books = await getData(category);
+    createBookCards(books);
+} catch (error) {
+  console.log(error);
+  bookList.innerHTML = `<h2>Error: No results found for: ${category}. Please check your typo. <br>Remember you write the category in english.</h2>`;
+}
   
 };
 
