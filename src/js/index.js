@@ -33,16 +33,18 @@ const createBookCards = function(books) {
 
 //HandleSearch function
 const handleSearch = async function() {
-  const category = categoryInput.value.trim();
+  let category = categoryInput.value.trim().toLowerCase().replace(/[\W_]/g, '');
   bookList.scrollIntoView({ behavior: 'smooth'});
   if (category === '') {
-    bookList.innerHTML = `<h2>Please write a category in English</h2>`;
+    bookList.innerHTML = '<h2>Please write a category in english</h2>';
     setTimeout(() => location.reload(), 3000);
     return;
+  } else {
+    bookList.innerHTML ='';
+    const books = await getData(category);
+    createBookCards(books);
   }
-
-  const books = await getData(category);
-  createBookCards(books);
+  
 };
 
 

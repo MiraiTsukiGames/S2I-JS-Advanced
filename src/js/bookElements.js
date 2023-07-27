@@ -1,4 +1,3 @@
-
 //Function create bookCards title and authors html elements
 const createCard = function(title, authors) {
    const bookDiv = document.createElement('div');
