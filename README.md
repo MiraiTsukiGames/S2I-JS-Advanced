@@ -2,7 +2,7 @@
 With this simple page, you can search for your favorite category book, in a database that includes a searchbar in google style, to search for the books you like and enjoy reading.
 
 ## :bulb: How it works
-Start writing the category you are looking for in the main search bar and check the book list available.
+Start typing the category you are looking for in the main search bar and check the book list available.
 
 
 
