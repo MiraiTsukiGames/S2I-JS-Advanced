@@ -1,8 +1,9 @@
-import { createDescriptionContainer, createDescriptionDiv } from "./bookElements";
-import { bookList } from "./index.js";
+import bookList  from "./index.js";
+import {createDescriptionContainer, createDescriptionDiv} from "./bookElements.js";
+
 
 //Function to initialize API data
-const getData = async function(category) {
+ async function getData(category) {
     const response = await fetch(`https://openlibrary.org/subjects/${category}.json`);
     const data= await response.json();
     if (response.status !== 404 && data.works.length > 0) {
@@ -12,10 +13,10 @@ const getData = async function(category) {
       bookList.innerHTML = `<h2>${errorMessage}</h2>`;
       throw new Error(errorMessage);
     }
-  };
+  }
 
   //Function get the book description
-const getBooks = async (bookKey, bookItem) =>  {
+ async function getBooks(bookKey, bookItem)  {
     const bookResponse = await fetch(`https://openlibrary.org${bookKey}.json`);
           const bookData = await bookResponse.json();
           const descriptionDiv = createDescriptionDiv();
@@ -31,6 +32,7 @@ const getBooks = async (bookKey, bookItem) =>  {
           } else {
               descriptionDiv.innerHTML = `<a href="https://openlibrary.org${bookKey}" target="_blank">View more</a>`;
           }
-        };
+        }
+      
 
-export {getData, getBooks};
+export { getData, getBooks};

@@ -1,7 +1,9 @@
 import '../css/stylesDesktop.css';
 import '../css/stylesMobile.css';
-import { createCard, createReadButton } from './bookElements';
-import { getBooks, getData } from './api';
+import {getData, getBooks} from './api.js';
+import {createCard, createReadButton } from './bookElements.js';
+
+
 
 //variables
 const categoryInput = document.getElementById('search-input');
@@ -9,7 +11,7 @@ const bookList = document.getElementById('book-list');
 const searchButton = document.getElementById('search-button');
 let books = []; 
 
-//Function create BookCards - getData
+//Function create BookCards
 const createBookCards = function(books) {
   bookList.innerHTML = '';
   books.forEach((book) => {
@@ -30,7 +32,7 @@ const createBookCards = function(books) {
   });  
 };
 
-//HandleSearch, createBookCards function 
+//HandleSearch, createBookCards getData function 
 const handleSearch = async function() {
   const category =  categoryInput.value.trim().toLowerCase().replace(/[\W_]/g, '');
   bookList.scrollIntoView({ behavior: 'smooth'});
@@ -57,4 +59,4 @@ if (key === 'Enter') {
 } 
 });
 
-export {bookList};
+export default bookList;
