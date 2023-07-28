@@ -7,6 +7,7 @@ Start typing the category you are looking for in the main search bar and check t
 
 Once selected you can see the book list and you will see title, author and a button read more.<br>
 If you want to read the description, you can click the button and then show the description.
+![Immagine](https://github.com/MiraiTsukiGames/S2I-JS-Advanced/assets/118011618/7de52258-88e4-43aa-8b83-f9a4cfa5ec3c)
 
 
 
