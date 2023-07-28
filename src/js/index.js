@@ -17,7 +17,7 @@ bookList.scrollIntoView({ behavior: 'smooth'});
     bookList.innerHTML = '<h2>Please write a category in english</h2>';
     return;
   } else {
-    getData(category);
+    getData(category, bookList);
   }
   
   
@@ -35,4 +35,3 @@ if (key === 'Enter') {
 } 
 });
 
-export default bookList;

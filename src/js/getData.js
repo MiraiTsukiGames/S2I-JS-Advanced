@@ -1,9 +1,8 @@
-import bookList  from "./index.js";
 import createBookCard from "./createBookCard.js";
 import getDescription from "./getDescription.js";
 
 //Function to initialize API data
- const getData = async function(category)  {
+ const getData = async function(category, bookList)  {
   try {
     const res = await fetch(`https://openlibrary.org/subjects/${category}.json`);
     const data = await res.json();
