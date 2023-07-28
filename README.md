@@ -2,12 +2,13 @@
 With this simple page, you can search for your favorite category book, in a database that includes a searchbar in google style, to search for the books you like and enjoy reading.
 
 ## :bulb: How it works
+![image](https://github.com/MiraiTsukiGames/S2I-JS-Advanced/assets/118011618/993da829-bf2d-4d20-b583-30f87903371e)
 Start typing the category you are looking for in the main search bar and check the book list available.
-
-
+![Immagine2](https://github.com/MiraiTsukiGames/S2I-JS-Advanced/assets/118011618/c6a3f795-9d6f-4ce1-8fc2-2f216bafc4e2)
 
 Once selected you can see the book list and you will see title, author and a button read more.<br>
 If you want to read the description, you can click the button and then show the description.
+![Immagine](https://github.com/MiraiTsukiGames/S2I-JS-Advanced/assets/118011618/7de52258-88e4-43aa-8b83-f9a4cfa5ec3c)
 
 
 
