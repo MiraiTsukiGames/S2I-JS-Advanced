@@ -1,49 +1,40 @@
 import bookList  from "./index.js";
-import getBooks from "./getBooks.js";
-let books = [];
+import createBookCard from "./createBookCard.js";
+import getDescription from "./getDescription.js";
 
 //Function to initialize API data
  const getData = async function(category)  {
   try {
-    var response = await fetch(`https://openlibrary.org/subjects/${category}.json`);
-    const data = await response.json();
-    books = data.works;
-    if (response.status !== 404 && data.works.length > 0) {
+    const res = await fetch(`https://openlibrary.org/subjects/${category}.json`);
+    const data = await res.json();
+    let books = data.works;
+
+    //Response status and data works length
+    if (res.status !== 404 && data.works.length > 0) {
       bookList.innerHTML = '';
       books.forEach((book) => {
        const title = book.title
        const authors = book.authors[0].name;
-       const bookKey = book.key;
-        const bookItem = document.createElement('div');
-        bookItem.classList.add('bookCard');
-        const titleElement = document.createElement('h2');
-        const authorElement = document.createElement('p');
+       
+       //BookCards title and authors
+      const bookCard = createBookCard(title, authors);
+      bookList.append(bookCard);
 
-        titleElement.innerHTML = `<strong>${title}</strong>`;
-         authorElement.innerHTML=  `Author: ${authors}`;
-      
-      const readButton = document.createElement('button');
-      readButton.innerText = 'Read more';
-      readButton.classList.add('read-button');
-      
-       bookList.append(bookItem);
-       bookItem.append(titleElement, authorElement);
-       bookItem.append(readButton);
-      
-      //Read button event listener - getBooks function
+      const readButton = bookCard.querySelector('.read-button');
+
+      //Read button Event listener and getDescription
       readButton.addEventListener('click', () => {
-        getBooks(bookKey, bookItem);
-        readButton.remove();
-        });
-        return response;
-      });  
+      getDescription(book, bookCard);
+      readButton.remove();
+    })
+      });
     } else {
       const errorMessage = `No results found for the category: ${category}`;
       bookList.innerHTML = `<h2>${errorMessage}</h2>`;
     }
   
   }catch(error) {
-    alert('Whoops something is wrong');
+  console.log(error);
   }
    
   };

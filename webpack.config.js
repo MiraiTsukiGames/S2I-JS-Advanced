@@ -1,16 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { LoaderOptionsPlugin } = require('webpack');
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 
 module.exports = {
   entry: {
       index: './src/js/index.js',
       data: './src/js/getData.js',
-      books: './src/js/getBooks.js'
+      description: './src/js/getDescription.js',
+      bookCard: './src/js/createBookCard.js',
+      createDescriptionContainer: './src/js/descriptionContainer.js'
   },
   output: {
       path: path.resolve(__dirname, 'dist'),
