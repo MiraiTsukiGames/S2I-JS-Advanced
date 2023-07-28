@@ -1,49 +1,23 @@
 import '../css/stylesDesktop.css';
 import '../css/stylesMobile.css';
-import {getData, getBooks} from './api.js';
-import {createCard, createReadButton } from './bookElements.js';
-
-
+import getData from './getData.js';
 
 //variables
 const categoryInput = document.getElementById('search-input');
 const bookList = document.getElementById('book-list');
 const searchButton = document.getElementById('search-button');
-let books = []; 
 
-//Function create BookCards
-const createBookCards = function(books) {
-  bookList.innerHTML = '';
-  books.forEach((book) => {
-   const title = book.title
-   const authors = book.authors[0].name;
-   const bookKey = book.key;
-  const bookItem = createCard(title, authors);
-  const readButton = createReadButton();
-
-   bookList.append(bookItem);
-   bookItem.append(readButton);
-
-  //Read button event listener - getBooks function
-  readButton.addEventListener('click', () => {
-    getBooks(bookKey, bookItem);
-    readButton.remove();
-    });
-  });  
-};
-
-//HandleSearch, createBookCards getData function 
+//HandleSearch  
 const handleSearch = async function() {
   const category =  categoryInput.value.trim().toLowerCase().replace(/[\W_]/g, '');
   bookList.scrollIntoView({ behavior: 'smooth'});
   if (category === '') {
     bookList.innerHTML = '<h2>Please write a category in english</h2>';
-    setTimeout(() => location.reload(), 3000);
     return;
+  } else {
+    getData(category);
   }
-    bookList.innerHTML ='';
-    books = await getData(category);  
-    createBookCards(books);
+  
   
 };
 

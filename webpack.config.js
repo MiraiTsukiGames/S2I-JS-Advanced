@@ -9,8 +9,8 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 module.exports = {
   entry: {
       index: './src/js/index.js',
-      book: './src/js/bookElements.js',
-      api: './src/js/api.js'
+      data: './src/js/getData.js',
+      books: './src/js/getBooks.js'
   },
   output: {
       path: path.resolve(__dirname, 'dist'),
