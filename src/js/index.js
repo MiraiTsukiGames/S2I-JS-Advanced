@@ -17,6 +17,7 @@ bookList.scrollIntoView({ behavior: 'smooth'});
     bookList.innerHTML = '<h2>Please write a category in english</h2>';
     return;
   } else {
+    bookList.innerHTML='';
     getData(category, bookList);
   }
   
