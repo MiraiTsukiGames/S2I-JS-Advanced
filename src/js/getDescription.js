@@ -1,4 +1,4 @@
-import createDescriptionContainer from "./descriptionContainer";
+import createDescriptionContainer from "./descriptionContainer.js";
 
 
 //Function get the book description
