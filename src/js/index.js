@@ -2,7 +2,7 @@ import "../css/stylesDesktop.css";
 import "../css/stylesMobile.css";
 import getData from "./getData.js";
 
-console.log(process.env.API_URL);
+
 //Variables
 const categoryInput = document.getElementById("search-input");
 const bookList = document.getElementById("book-list");
