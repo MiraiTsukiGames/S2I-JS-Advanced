@@ -1,24 +1,22 @@
 const createDescriptionContainer = (description) => {
-    const descriptionDiv = document.createElement('div');
-    descriptionDiv.classList.add('description');
-    
-    const descriptionElement = document.createElement('p');
-    const descriptionContainer = document.createElement('div');
-    descriptionContainer.classList.add('container-description');
+  const descriptionDiv = document.createElement("div");
+  descriptionDiv.classList.add("description");
 
-     //Check the book description is undefined
-     if (description === undefined) {
-        description = "description not found";
-        descriptionElement.innerHTML = `${description}`;
-       } else {
-      description = description.value || description;
-      descriptionElement.innerHTML = `${description}`;
-    }
+  const descriptionElement = document.createElement("p");
+  const descriptionContainer = document.createElement("div");
+  descriptionContainer.classList.add("container-description");
 
-    descriptionContainer.append(descriptionDiv, descriptionElement);
-    return descriptionContainer;
-  };
+  //Check the book description is undefined
+  if (description === undefined) {
+    description = "description not found";
+    descriptionElement.innerHTML = `${description}`;
+  } else {
+    description = description.value || description;
+    descriptionElement.innerHTML = `${description}`;
+  }
 
+  descriptionContainer.append(descriptionDiv, descriptionElement);
+  return descriptionContainer;
+};
 
 export default createDescriptionContainer;
-  

@@ -1,28 +1,23 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
- 
- @media only screen and (max-width: 1280px) {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
+@media only screen and (max-width: 1280px) {
   #bar {
     left: 30%;
   }
 }
- 
- @media only screen and (max-width: 1024px) {
 
+@media only screen and (max-width: 1024px) {
   #bar {
     top: 70%;
     left: 20%;
   }
-  
- }
- 
- @media only screen and (max-width: 912px) {
+}
 
+@media only screen and (max-width: 912px) {
   body {
     font-size: 14px;
     overflow-x: hidden;
   }
-
 
   h1 {
     font-size: 5rem;
@@ -45,25 +40,23 @@
   }
 
   .structural {
-    position:absolute; 
-    left:80px; 
+    position: absolute;
+    left: 80px;
     top: -160%;
     color: rgb(255, 255, 255);
     font-size: 2rem;
     opacity: 0.5;
   }
 
- #book-list h2 {
+  #book-list h2 {
     font-size: 1.5rem;
   }
-
 
   #book-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
   }
 
   .bookCard {
@@ -78,40 +71,38 @@
   .description {
     text-align: center;
     line-height: 1.8;
- }
+  }
 
- .read-button {
-  background-color: darkblue;
-  color: white;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 14px 20px;
-  padding-top: 10px;
-}
+  .read-button {
+    background-color: darkblue;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 14px 20px;
+    padding-top: 10px;
+  }
 
-.read-button:hover {
-  background-color: lightskyblue;
-  color: darkblue;
-  cursor: pointer;
-}
+  .read-button:hover {
+    background-color: lightskyblue;
+    color: darkblue;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   body {
     font-size: 8px;
     overflow-x: hidden;
   }
-
 
   h1 {
     font-size: 2.5rem;
@@ -138,8 +129,8 @@
   }
 
   .structural {
-    position:absolute; 
-    left:80px; 
+    position: absolute;
+    left: 80px;
     top: -120%;
     color: rgb(255, 255, 255);
     font-size: 1rem;
@@ -150,7 +141,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
   }
 
   .bookCard {
@@ -165,31 +155,30 @@
   .description {
     text-align: center;
     line-height: 1.8;
- }
+  }
 
- 
- .fa-sharp {
-  font-size: 15px;
-  height: 15px;
-  position:relative;
-  top: 0;
-  left: 10px;
-  color: black;
-}
+  .fa-sharp {
+    font-size: 15px;
+    height: 15px;
+    position: relative;
+    top: 0;
+    left: 10px;
+    color: black;
+  }
 
-.read-button {
-  background-color: darkblue;
-  color: white;
-  font-size: 8px;
-  border-radius: 5px;
-  border: 1px solid white;
-  padding: 5px 10px;
-  padding-top: 5px;
-}
+  .read-button {
+    background-color: darkblue;
+    color: white;
+    font-size: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    padding-top: 5px;
+  }
 
-.read-button:hover {
-  background-color: lightskyblue;
-  color: darkblue;
-  cursor: pointer;
-}
+  .read-button:hover {
+    background-color: lightskyblue;
+    color: darkblue;
+    cursor: pointer;
+  }
 }

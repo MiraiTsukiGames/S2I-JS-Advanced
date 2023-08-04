@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   line-height: 1.6;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -16,106 +16,106 @@ body {
   max-width: auto;
 }
 h1 {
-    color: rgb(255, 255, 255);
-    font-size: 6rem;
-    text-align: center;
-    font-weight: bold;
-  }
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+  text-align: center;
+  font-weight: bold;
+}
 
-  #bar {
-    margin: 0 auto;
-    width:575px;
-    border-radius:30px;
-    border:1px solid #dcdcdc;
-    background-color: white;
-    position: absolute;
-    top: 65%;
-    left: 35%;
-  }
+#bar {
+  margin: 0 auto;
+  width: 575px;
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+  background-color: white;
+  position: absolute;
+  top: 65%;
+  left: 35%;
+}
 
-  #bar:hover {
-    box-shadow: 1px 1px 8px 1px #dcdcdc;
-  }
+#bar:hover {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
 
-  #bar:focus-within {
-    box-shadow: 1px 1px 8px 1px #dcdcdc;
-    outline:none;
-  }
+#bar:focus-within {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline: none;
+}
 
-  #search-input {
-  height:45px;
-  border:none;
-  width:500px;
-  font-size:16px;
+#search-input {
+  height: 45px;
+  border: none;
+  width: 500px;
+  font-size: 16px;
   outline: none;
   background-color: transparent;
-  border-radius:30px;
+  border-radius: 30px;
   margin-left: 15px;
-  }
+}
 
-  .read-button {
-    background-color: darkblue;
-    color: white;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid white;
-    padding: 14px 20px;
-    padding-top: 10px;
-  }
+.read-button {
+  background-color: darkblue;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 14px 20px;
+  padding-top: 10px;
+}
 
-  .read-button:hover {
-    background-color: lightskyblue;
-    color: darkblue;
-    cursor: pointer;
-  }
-  header {
-    height:  100vh;
-    width: 100%;
-    background: linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)), url('../img/library-img.jpg') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
- 
+.read-button:hover {
+  background-color: lightskyblue;
+  color: darkblue;
+  cursor: pointer;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  background:
+    linear-gradient(rgba(141, 39, 174, 0.3), rgba(141, 39, 174, 0.5)),
+    url("../img/library-img.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .fa-sharp {
-    font-size: 20px;
-    height:20px;
-    position:relative;
-    top: 5px;
-    left:10px;
-    color: black;
-  }
+.fa-sharp {
+  font-size: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  color: black;
+}
 
-  #search-button {
-    background-color: transparent;
-    border: none;
-  }
+#search-button {
+  background-color: transparent;
+  border: none;
+}
 
-  #search-button:hover {
-    cursor: pointer;
-    color: blueviolet;
-  }
+#search-button:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
 
-  .structural {
-    position:absolute; 
-    left:80px; 
-    top: -200%;
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    opacity: 0.5;
-  }
+.structural {
+  position: absolute;
+  left: 80px;
+  top: -200%;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  opacity: 0.5;
+}
 
-
-  #books {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+#books {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #book-list h2 {
   font-size: 2rem;
@@ -133,12 +133,12 @@ h1 {
 }
 
 .description {
-   text-align: center;
-   line-height: 1.8;
+  text-align: center;
+  line-height: 1.8;
 }
 
 .container-description {
-        max-width: 900px;
+  max-width: 900px;
 }
 
 .bookCard {
@@ -148,4 +148,3 @@ h1 {
   background-color: rgb(233, 233, 233);
   border-radius: 5px;
 }
-
