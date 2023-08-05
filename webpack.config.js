@@ -60,7 +60,6 @@ module.exports = {
       template: "./src/index.html",
     }),
     new Dotenv({
-      path: "./.env",
       systemvars: true,
     }),
   ],

@@ -1,4 +1,4 @@
-/*! For license information please see index.5d75ebfcf5da807158d0.js.LICENSE.txt */
+/*! For license information please see index.7502b00b8b3e77a493a0.js.LICENSE.txt */
 (() => {
   var t = {
       4162: (t, e, n) => {
@@ -40,7 +40,7 @@
       },
       4830: (t, e, n) => {
         "use strict";
-        n.d(e, { Z: () => f });
+        n.d(e, { D: () => f, Z: () => p });
         var r = n(4162),
           o = n(9302),
           i = n(2861),
@@ -487,7 +487,8 @@
           }
           s.done ? e(c) : Promise.resolve(c).then(r, o);
         }
-        const f = (function () {
+        var f = "https://openlibrary.org";
+        const p = (function () {
           var t,
             e =
               ((t = u().mark(function t(e, n) {
@@ -500,28 +501,22 @@
                           return (
                             (t.prev = 0),
                             (t.next = 3),
-                            i.Z.get(
-                              ""
-                                .concat("https://openlibrary.org/subjects/")
-                                .concat(e, ".json"),
-                            )
+                            i.Z.get(f + "/subjects/".concat(e, ".json"))
                           );
                         case 3:
-                          return (
-                            (a = t.sent), (t.next = 6), s()(a.data, "works")
-                          );
+                          return (a = t.sent), (t.next = 6), a.data.works;
                         case 6:
                           (c = t.sent),
                             404 !== a.status && c.length > 0
                               ? ((n.innerHTML = ""),
                                 c.forEach(function (t) {
-                                  var e = t.title,
-                                    i = t.authors[0].name,
+                                  var e = s()(t, "title"),
+                                    i = s()(t, "authors[0].name"),
                                     a = (0, r.Z)(e, i);
                                   n.append(a);
-                                  var s = a.querySelector(".read-button");
-                                  s.addEventListener("click", function () {
-                                    (0, o.Z)(t, a), s.remove();
+                                  var c = a.querySelector(".read-button");
+                                  c.addEventListener("click", function () {
+                                    (0, o.Z)(t, a), c.remove();
                                   });
                                 }))
                               : (n.innerHTML =
@@ -564,14 +559,15 @@
       },
       9302: (t, e, n) => {
         "use strict";
-        n.d(e, { Z: () => l });
+        n.d(e, { Z: () => f });
         var r = n(3653),
           o = n(2861),
           i = n(7361),
-          a = n.n(i);
-        function s(t) {
+          a = n.n(i),
+          s = n(4830);
+        function c(t) {
           return (
-            (s =
+            (c =
               "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
                 ? function (t) {
                     return typeof t;
@@ -584,11 +580,11 @@
                       ? "symbol"
                       : typeof t;
                   }),
-            s(t)
+            c(t)
           );
         }
-        function c() {
-          c = function () {
+        function u() {
+          u = function () {
             return t;
           };
           var t = {},
@@ -602,7 +598,7 @@
             o = "function" == typeof Symbol ? Symbol : {},
             i = o.iterator || "@@iterator",
             a = o.asyncIterator || "@@asyncIterator",
-            u = o.toStringTag || "@@toStringTag";
+            s = o.toStringTag || "@@toStringTag";
           function l(t, e, n) {
             return (
               Object.defineProperty(t, e, {
@@ -655,18 +651,18 @@
             });
           }
           function E(t, e) {
-            function o(r, i, a, c) {
+            function o(r, i, a, s) {
               var u = p(t[r], t, i);
               if ("throw" !== u.type) {
                 var l = u.arg,
                   f = l.value;
-                return f && "object" == s(f) && n.call(f, "__await")
+                return f && "object" == c(f) && n.call(f, "__await")
                   ? e.resolve(f.__await).then(
                       function (t) {
-                        o("next", t, a, c);
+                        o("next", t, a, s);
                       },
                       function (t) {
-                        o("throw", t, a, c);
+                        o("throw", t, a, s);
                       },
                     )
                   : e.resolve(f).then(
@@ -674,11 +670,11 @@
                         (l.value = t), a(l);
                       },
                       function (t) {
-                        return o("throw", t, a, c);
+                        return o("throw", t, a, s);
                       },
                     );
               }
-              c(u.arg);
+              s(u.arg);
             }
             var i;
             r(this, "_invoke", {
@@ -808,7 +804,7 @@
             (m.prototype = y),
             r(w, "constructor", { value: y, configurable: !0 }),
             r(y, "constructor", { value: m, configurable: !0 }),
-            (m.displayName = l(y, u, "GeneratorFunction")),
+            (m.displayName = l(y, s, "GeneratorFunction")),
             (t.isGeneratorFunction = function (t) {
               var e = "function" == typeof t && t.constructor;
               return (
@@ -820,7 +816,7 @@
               return (
                 Object.setPrototypeOf
                   ? Object.setPrototypeOf(t, y)
-                  : ((t.__proto__ = y), l(t, u, "GeneratorFunction")),
+                  : ((t.__proto__ = y), l(t, s, "GeneratorFunction")),
                 (t.prototype = Object.create(w)),
                 t
               );
@@ -843,7 +839,7 @@
                   });
             }),
             x(w),
-            l(w, u, "Generator"),
+            l(w, s, "Generator"),
             l(w, i, function () {
               return this;
             }),
@@ -1001,7 +997,7 @@
             t
           );
         }
-        function u(t, e, n, r, o, i, a) {
+        function l(t, e, n, r, o, i, a) {
           try {
             var s = t[i](a),
               c = s.value;
@@ -1010,12 +1006,12 @@
           }
           s.done ? e(c) : Promise.resolve(c).then(r, o);
         }
-        const l = (function () {
+        const f = (function () {
           var t,
             e =
-              ((t = c().mark(function t(e, n) {
-                var i, s, u;
-                return c().wrap(
+              ((t = u().mark(function t(e, n) {
+                var i, c, l;
+                return u().wrap(
                   function (t) {
                     for (;;)
                       switch ((t.prev = t.next)) {
@@ -1023,11 +1019,7 @@
                           return (
                             (t.prev = 0),
                             (t.next = 3),
-                            o.Z.get(
-                              ""
-                                .concat("https://openlibrary.org")
-                                .concat(e.key, ".json"),
-                            )
+                            o.Z.get(s.D + "".concat(e.key, ".json"))
                           );
                         case 3:
                           return (
@@ -1036,9 +1028,9 @@
                             a()(i.data, "description")
                           );
                         case 6:
-                          (s = t.sent),
-                            (u = (0, r.Z)(s)),
-                            n.appendChild(u),
+                          (c = t.sent),
+                            (l = (0, r.Z)(c)),
+                            n.appendChild(l),
                             (t.next = 14);
                           break;
                         case 11:
@@ -1059,10 +1051,10 @@
                 return new Promise(function (r, o) {
                   var i = t.apply(e, n);
                   function a(t) {
-                    u(i, r, o, a, s, "next", t);
+                    l(i, r, o, a, s, "next", t);
                   }
                   function s(t) {
-                    u(i, r, o, a, s, "throw", t);
+                    l(i, r, o, a, s, "throw", t);
                   }
                   a(void 0);
                 });
@@ -2185,7 +2177,7 @@
             isAsyncFn: U,
             isThenable: (t) => t && (y(t) || h(t)) && h(t.then) && h(t.catch),
           };
-        function z(t, e, n, r, o) {
+        function D(t, e, n, r, o) {
           Error.call(this),
             Error.captureStackTrace
               ? Error.captureStackTrace(this, this.constructor)
@@ -2197,7 +2189,7 @@
             r && (this.request = r),
             o && (this.response = o);
         }
-        B.inherits(z, Error, {
+        B.inherits(D, Error, {
           toJSON: function () {
             return {
               message: this.message,
@@ -2217,7 +2209,7 @@
             };
           },
         });
-        const D = z.prototype,
+        const z = D.prototype,
           I = {};
         [
           "ERR_BAD_OPTION_VALUE",
@@ -2235,10 +2227,10 @@
         ].forEach((t) => {
           I[t] = { value: t };
         }),
-          Object.defineProperties(z, I),
-          Object.defineProperty(D, "isAxiosError", { value: !0 }),
-          (z.from = (t, e, n, r, o, i) => {
-            const a = Object.create(D);
+          Object.defineProperties(D, I),
+          Object.defineProperty(z, "isAxiosError", { value: !0 }),
+          (D.from = (t, e, n, r, o, i) => {
+            const a = Object.create(z);
             return (
               B.toFlatObject(
                 t,
@@ -2248,14 +2240,14 @@
                 },
                 (t) => "isAxiosError" !== t,
               ),
-              z.call(a, t.message, e, n, r, o),
+              D.call(a, t.message, e, n, r, o),
               (a.cause = t),
               (a.name = t.name),
               i && Object.assign(a, i),
               a
             );
           });
-        const M = z;
+        const M = D;
         function q(t) {
           return B.isPlainObject(t) || B.isArray(t);
         }
