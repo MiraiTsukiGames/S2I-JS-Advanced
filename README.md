@@ -50,7 +50,7 @@ After the installation, you're ready to go.
 
 `npm run build`
 
-### 5 - Open in the browser
+### 4 - Open in the browser
 
 Check out for index.html in the /dist folder.
 
