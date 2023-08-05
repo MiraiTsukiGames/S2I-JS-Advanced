@@ -1,18 +1,18 @@
 //Create BookCard function
 const createBookCard = (title, authors) => {
-  let bookCard = document.createElement("div");
+  const bookCard = document.createElement("div");
   bookCard.classList.add("bookCard");
 
   //Create title Element
-  let titleElement = document.createElement("h2");
+  const titleElement = document.createElement("h2");
   titleElement.innerHTML = `<strong>${title}</strong>`;
 
   //Create author Element
-  let authorElement = document.createElement("p");
+  const authorElement = document.createElement("p");
   authorElement.textContent = `Author: ${authors}`;
 
   //Create Read button
-  let readButton = document.createElement("button");
+  const readButton = document.createElement("button");
   readButton.classList.add("read-button");
   readButton.textContent = "Read more";
 

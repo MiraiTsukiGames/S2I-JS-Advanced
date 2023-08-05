@@ -4,8 +4,8 @@ const createDescriptionContainer = (description) => {
   descriptionDiv.classList.add("description");
 
   //Create description Elements
-  let descriptionElement = document.createElement("p");
-  let descriptionContainer = document.createElement("div");
+  const descriptionElement = document.createElement("p");
+  const descriptionContainer = document.createElement("div");
   descriptionContainer.classList.add("container-description");
 
   //Check the book description is undefined

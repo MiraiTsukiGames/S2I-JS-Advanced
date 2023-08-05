@@ -1,31 +1,29 @@
 import createBookCard from "./createBookCard.js";
 import getDescription from "./getDescription.js";
 import axios from "axios";
-import _ from "lodash";
+import _get from "lodash/get";
 
 //Function to initialize API data
 const getData = async function (category, bookList) {
   try {
-    let res = await axios.get(
-      `${process.env.API_URL}/subjects/${category}.json`,
-    );
+    const res = await axios.get(`${process.env.API_URL}${category}.json`);
 
     //Response books data
-    let books = res.data.works;
+    let books = await _get(res.data, "works");
 
     //Response status and data works length
-    if (res.status !== 404 && res.data.works.length > 0) {
+    if (res.status !== 404 && books.length > 0) {
       bookList.innerHTML = "";
       books.forEach((book) => {
-        let title = _.get(book, "title");
-        let authors = _.get(book, "authors[0].name");
+        const title = book.title;
+        const authors = book.authors[0].name;
 
         //BookCards title and authors
-        let bookCard = createBookCard(title, authors);
+        const bookCard = createBookCard(title, authors);
         bookList.append(bookCard);
 
         //Read button
-        let readButton = bookCard.querySelector(".read-button");
+        const readButton = bookCard.querySelector(".read-button");
 
         //Read button Event listener and getDescription
         readButton.addEventListener("click", () => {
