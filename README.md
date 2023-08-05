@@ -46,11 +46,18 @@ After the installation, you're ready to go.
 
 `npm install`
 
-### 3 - Build it!
+### 3 - Create .env file
+
+Create a text file in the root folder and name it .env <br>
+Copy and paste in the file .env and save it<br>
+`API_URL="https://openlibrary.org/subjects/"`<br>
+`BOOK_URL="https://openlibrary.org"`
+
+### 4 - Build it!
 
 `npm run build`
 
-### 4 - Open in the browser
+### 5 - Open in the browser
 
 Check out for index.html in the /dist folder.
 
