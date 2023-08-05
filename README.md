@@ -22,6 +22,10 @@ If you want to read the description, you can click the button and then show the 
 
 - [Webpack 5](https://webpack.js.org/)
 
+## 📚: Libraries
+-Axios
+-Lodash
+
 ## 📚: External Services
 
 - [Openlibrary API](https://openlibrary.org/developers/api)
