@@ -23,8 +23,9 @@ If you want to read the description, you can click the button and then show the 
 - [Webpack 5](https://webpack.js.org/)
 
 ## 📚: Libraries
--Axios
--Lodash
+
+- [Axios](https://axios-http.com)
+- [Lodash](https://lodash.com)
 
 ## 📚: External Services
 
