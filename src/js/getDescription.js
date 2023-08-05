@@ -5,12 +5,15 @@ import axios from "axios";
 //Function get the book description
 const getDescription = async function (book, bookCard) {
   try {
-    const response = await axios.get(`${process.env.API_URL}${book.key}.json`);
+    //Response description
+    let response = await axios.get(`${process.env.API_URL}${book.key}.json`);
     let description = _.get(response.data, "description");
 
-    const descriptionContainer = createDescriptionContainer(description);
+    //Create description container
+    let descriptionContainer = createDescriptionContainer(description);
     bookCard.appendChild(descriptionContainer);
   } catch (error) {
+    //Error
     console.log(error);
   }
 };

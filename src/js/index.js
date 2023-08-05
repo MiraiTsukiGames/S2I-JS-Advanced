@@ -2,7 +2,6 @@ import "../css/stylesDesktop.css";
 import "../css/stylesMobile.css";
 import getData from "./getData.js";
 
-
 //Variables
 const categoryInput = document.getElementById("search-input");
 const bookList = document.getElementById("book-list");

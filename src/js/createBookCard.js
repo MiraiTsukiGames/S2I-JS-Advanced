@@ -1,17 +1,22 @@
 //Create BookCard function
 const createBookCard = (title, authors) => {
-  const bookCard = document.createElement("div");
+  let bookCard = document.createElement("div");
   bookCard.classList.add("bookCard");
 
-  const titleElement = document.createElement("h2");
+  //Create title Element
+  let titleElement = document.createElement("h2");
   titleElement.innerHTML = `<strong>${title}</strong>`;
 
-  const authorElement = document.createElement("p");
+  //Create author Element
+  let authorElement = document.createElement("p");
   authorElement.textContent = `Author: ${authors}`;
-  const readButton = document.createElement("button");
+
+  //Create Read button
+  let readButton = document.createElement("button");
   readButton.classList.add("read-button");
   readButton.textContent = "Read more";
 
+  //Append Elements
   bookCard.append(titleElement, authorElement, readButton);
   return bookCard;
 };

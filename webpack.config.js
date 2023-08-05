@@ -49,18 +49,6 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.ico$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "my-icon.[ext]",
-              outputPath: "./img",
-            },
-          },
-        ],
-      },
     ],
   },
   plugins: [
@@ -71,9 +59,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
-    new Dotenv({
-      path: "./src/file.env",
-    }),
+    new Dotenv(),
   ],
 
   devServer: {
