@@ -48,8 +48,8 @@ After the installation, you're ready to go.
 
 ### 3 - Create .env file
 
-Create a text file in the root folder and name it .env <br>
-Copy and paste this code in the file .env and save it<br>
+In the project's root folder, create a new file named .env(note the leading dot before the file name) <br>
+Copy and paste this code into the file .env and save it<br>
 
 `API_URL="https://openlibrary.org/subjects/"`<br>
 `BOOK_URL="https://openlibrary.org"`
