@@ -1,6 +1,6 @@
 //Create descriptionContainer function
 const createDescriptionContainer = (description) => {
-  let descriptionDiv = document.createElement("div");
+  const descriptionDiv = document.createElement("div");
   descriptionDiv.classList.add("description");
 
   //Create description Elements
