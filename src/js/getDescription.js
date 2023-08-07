@@ -6,9 +6,11 @@ import { openLibraryUrl } from "./getData.js";
 //Function get the book description
 const getDescription = async function (book, bookCard) {
   try {
-    //Response description
     const response = await axios.get(openLibraryUrl + `${book.key}.json`);
-    const description = await _get(response.data, "description");
+
+    //Response description
+    let data = response.data;
+    const description = _get(data, "description");
 
     //Create description container
     const descriptionContainer = createDescriptionContainer(description);

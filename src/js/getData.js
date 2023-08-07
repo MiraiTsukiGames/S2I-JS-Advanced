@@ -11,7 +11,7 @@ const getData = async function (category, bookList) {
     const res = await axios.get(openLibraryUrl + `/subjects/${category}.json`);
 
     //Response books data
-    let books = await res.data.works;
+    let books = res.data.works;
 
     //Response status and data works length
     if (res.status !== 404 && books.length > 0) {
