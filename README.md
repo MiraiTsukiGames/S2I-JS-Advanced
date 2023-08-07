@@ -46,11 +46,15 @@ After the installation, you're ready to go.
 
 `npm install`
 
-### 3 - Build it!
+### 3 - Environment variable
+
+Copy the `.env.example file` in the project's root folder and rename it `.env`, add YOUR URL.
+
+### 4 - Build it!
 
 `npm run build`
 
-### 4 - Open in the browser
+### 5 - Open in the browser
 
 Check out for index.html in the /dist folder.
 
