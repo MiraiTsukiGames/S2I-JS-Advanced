@@ -24,8 +24,8 @@ If you want to read the description, you can click the button and then show the 
 
 ## 📚: Libraries
 
-- [Axios](https://axios-http.com)
-- [Get from \_Lodash](https://lodash.com)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Get from lodash/get](https://lodash.com)
 
 ## 📚: External Services
 
@@ -46,11 +46,15 @@ After the installation, you're ready to go.
 
 `npm install`
 
-### 3 - Build it!
+### 3 - Environment variable
+
+Copy the `.env.example file` in the project's root folder and rename it `.env`, add YOUR URL.
+
+### 4 - Build it!
 
 `npm run build`
 
-### 4 - Open in the browser
+### 5 - Open in the browser
 
 Check out for index.html in the /dist folder.
 
