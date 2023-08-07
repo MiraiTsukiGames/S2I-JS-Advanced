@@ -24,7 +24,7 @@ If you want to read the description, you can click the button and then show the 
 
 ## 📚: Libraries
 
-- [Axios](https://axios-http.com)
+- [Axios](https://www.npmjs.com/package/axios)
 - [Get from lodash/get](https://lodash.com)
 
 ## 📚: External Services
