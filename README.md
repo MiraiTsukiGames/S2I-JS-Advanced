@@ -25,7 +25,7 @@ If you want to read the description, you can click the button and then show the 
 ## 📚: Libraries
 
 - [Axios](https://axios-http.com)
-- [Get from \_Lodash](https://lodash.com)
+- [Get from lodash/get](https://lodash.com)
 
 ## 📚: External Services
 
