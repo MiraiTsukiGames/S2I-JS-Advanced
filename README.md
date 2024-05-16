@@ -66,3 +66,8 @@ Elsewhere, you can simply try it here:
 ## :e-mail: Contact Me
 
 You can find my Linkedin profile here: (https://www.linkedin.com/in/samantamancini/)
+
+## Contributing
+1 - Fork the repository. This will create a copy of the repository on your own GitHub account.
+2 - Make changes to the code. You can make changes to the code in the src directory. Please make sure your changes are well-documented and follow our coding style guidelines.
+3 - Submit a pull request. Once you are satisfied with your changes, submit a pull request to the main branch of the repository. Please include a description of your changes in the pull request message.
